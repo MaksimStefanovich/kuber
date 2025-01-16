@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: api-gateway
+#activate in spring-boot's actuator health url and prometheus url
+management:
+  metrics:
+    tags:
+      application: api-gateway
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+
+otel:
+  instrumentation:
+    micrometer:
+      enabled: true
+#  logs:
+#    exporter: none
+#  metrics:
+#    exporter: none
+#  traces:
+#    exporter: none

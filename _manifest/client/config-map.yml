@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: client
+  namespace: spring-app
+data:
+  application.yaml: |-
+    my:
+      property: hello world
+    client: 
+     server:
+      url: http://server-service.spring-app:8080
+    spring:
+      datasource:
+        username: ${DB_USERNAME}
+        password: ${DB_PASSWORD}
+        url: jdbc:postgresql://host.minikube.internal:5432/postgres

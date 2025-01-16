@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: api-gateway
+  namespace: spring-app
+data:
+  application.yaml: |-
+    otel:
+      exporter:
+        otlp:
+          traces:
+            endpoint: "http://otel-agent-collector.spring-app.svc.cluster.local:4318/v1/traces"
+          logs:
+            endpoint: "http://otel-agent-collector.spring-app.svc.cluster.local:4318/v1/logs"
+          metrics:
+            endpoint: "http://otel-agent-collector.spring-app.svc.cluster.local:4318/v1/metrics"
+    services:
+      book:
+        url: "http://book-service-service.spring-app.svc.cluster.local:8080"

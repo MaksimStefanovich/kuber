@@ -1,0 +1,25 @@
+otel:
+  logs:
+    exporter: none
+  metrics:
+    exporter: none
+  traces:
+    exporter: none
+  exporter:
+    otlp:
+      traces:
+        endpoint: "http://localhost:4418/v1/traces"
+server:
+  port: 8081
+logging:
+  level:
+    com.stefanovich.bookservice.api.BookApi: debug
+
+spring:
+  datasource:
+    username: postgres
+    password: example
+    url: jdbc:postgresql://localhost:5433/book
+  jpa:
+    hibernate:
+      ddl-auto: update

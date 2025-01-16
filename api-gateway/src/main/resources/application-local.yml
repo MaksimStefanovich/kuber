@@ -1,0 +1,20 @@
+otel:
+  exporter:
+    otlp:
+      traces:
+        endpoint: "http://otel-collector.kuber.com/v1/traces"
+  logs:
+    exporter: none
+  metrics:
+    exporter: none
+  traces:
+    exporter: none
+
+services:
+  book:
+    url: "http://localhost:8081"
+    active: false
+
+
+
+

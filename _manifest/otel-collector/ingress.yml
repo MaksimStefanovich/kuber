@@ -1,0 +1,31 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: otel-collector-ingress
+  namespace: spring-app
+spec:
+  rules:
+    - host: otel-collector.kuber.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: otel-agent-collector
+                port:
+                  number: 4317
+          - path: /v1
+            pathType: Prefix
+            backend:
+              service:
+                name: otel-agent-collector
+                port:
+                  number: 4318
+          - path: /metrics
+            pathType: Prefix
+            backend:
+              service:
+                name: otel-agent-collector
+                port:
+                  number: 8889

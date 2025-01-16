@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: book-service
+  namespace: spring-app
+spec:
+  rules:
+    - host: book-service.kuber.com
+      http:
+        paths:
+          - path: /
+            pathType: Prefix
+            backend:
+              service:
+                name: book-service-service
+                port:
+                  number: 8080
