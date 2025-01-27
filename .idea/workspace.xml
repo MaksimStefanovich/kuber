@@ -4,43 +4,80 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c5d2aef-b810-4e21-9e91-fea5db67aa76" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/java/com/stefanovich/client/ClientApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/client/src/test/java/com/stefanovich/client/ClientApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/commands.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/kuber.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifest/client/deployment.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifest/client/ingress.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifest/client/pod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manifest/client/service.yml" afterDir="false" />
+    <list default="true" id="7c5d2aef-b810-4e21-9e91-fea5db67aa76" name="Changes" comment="remove client service">
+      <change afterPath="$PROJECT_DIR$/book-service/src/main/java/com/stefanovich/bookservice/service/BookInsertLockService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-gateway/src/main/resources/application-local.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-gateway/src/main/resources/application-local.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/stefanovich/bookservice/repository/BookInsertLockRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/stefanovich/bookservice/repository/BookInsertLockRepo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/book-service/src/main/java/com/stefanovich/bookservice/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/book-service/src/main/java/com/stefanovich/bookservice/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/commands.bat" beforeDir="false" afterPath="$PROJECT_DIR$/commands.bat" afterDir="false" />
+    </list>
+    <list id="27baedb4-926e-43b0-8cd3-bcc3b9d2fe58" name="ignored" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-gateway/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/book-service/mvnw.cmd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="SYNC" />
   </component>
-  <component name="KubernetesApiProvider"><![CDATA[{
-  "isMigrated": true
-}]]></component>
+  <component name="KubernetesApiProvider">{
+  &quot;isMigrated&quot;: true
+}</component>
   <component name="KubernetesSettings">
     <option name="contextName" value="minikube" />
   </component>
+  <component name="LineStatusTrackerManager">
+    <file path="$PROJECT_DIR$/.idea/workspace.xml">
+      <ranges>
+        <range start1="6" end1="26" start2="6" end2="28" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="31" end1="31" start2="33" end2="41" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="34" end1="34" start2="44" end2="45" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="35" end1="38" start2="46" end2="49" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="40" end1="40" start2="51" end2="74" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="43" end1="43" start2="77" end2="80" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="61" end1="61" start2="98" end2="99" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="65" end1="65" start2="103" end2="104" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="70" end1="71" start2="109" end2="110" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="72" end1="72" start2="111" end2="116" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="74" end1="75" start2="118" end2="170" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="76" end1="76" start2="171" end2="172" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="82" end1="82" start2="178" end2="252" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="87" end1="87" start2="257" end2="258" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="101" end1="101" start2="272" end2="332" changelist="7c5d2aef-b810-4e21-9e91-fea5db67aa76" />
+        <range start1="102" end1="102" start2="333" end2="334" changelist="27baedb4-926e-43b0-8cd3-bcc3b9d2fe58" />
+        <range start1="106" end1="106" start2="338" end2="343" changelist="27baedb4-926e-43b0-8cd3-bcc3b9d2fe58" />
+      </ranges>
+    </file>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
@@ -59,32 +96,166 @@
     &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;openjdk-21&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/maxim/IdeaProjects/kuber/_manifest/book-service&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.importing&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  },
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
+    ]
   }
 }</component>
-  <component name="RunManager">
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\maxim\IdeaProjects\kuber\_manifest\book-service" />
+      <recent name="C:\Users\maxim\IdeaProjects\kuber" />
+      <recent name="C:\Users\maxim\IdeaProjects\kuber\_manifest\api-gateway" />
+      <recent name="C:\Users\maxim\IdeaProjects\kuber\_manifest\otel-collector" />
+      <recent name="C:\Users\maxim\IdeaProjects\kuber\_manifest\server" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\maxim\IdeaProjects\kuber\_manifest" />
+      <recent name="C:\Users\maxim\IdeaProjects\kuber\manifest\client" />
+      <recent name="C:\Users\maxim\IdeaProjects\kuber\manifest" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Docker.docker-compose.yml.postgres: Compose Deployment">
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="api-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stefanovich.apigateway.ApiGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="book-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stefanovich.bookservice.BookServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BookServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <envs>
+        <env name="server.port" value="8088" />
+      </envs>
+      <module name="book-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stefanovich.bookservice.BookServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
       <module name="client" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.stefanovich.client.ClientApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="ACTIVE_PROFILES" value="local" />
+      <module name="server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.stefanovich.server.ServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="docker-deploy" factoryName="docker-compose.yml" temporary="true">
+      <deployment type="docker-compose.yml">
+        <settings />
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.grafana: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="grafana" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.jaeger: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="jaeger" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.postgres: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="postgres" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker-compose.yml.prometheus: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="prometheus" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Docker.docker-compose.yml.postgres: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.prometheus: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.grafana: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml.jaeger: Compose Deployment" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="7c5d2aef-b810-4e21-9e91-fea5db67aa76" name="Changes" comment="" />
+      <changelist id="27baedb4-926e-43b0-8cd3-bcc3b9d2fe58" name="ignored" comment="" />
       <created>1710777380072</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -99,6 +270,66 @@
       <workItem from="1712237210210" duration="5820000" />
       <workItem from="1712299045690" duration="13000" />
       <workItem from="1712922794421" duration="5323000" />
+      <workItem from="1713164807475" duration="132000" />
+      <workItem from="1713445411837" duration="3522000" />
+      <workItem from="1713527633049" duration="64000" />
+      <workItem from="1714051730106" duration="2683000" />
+      <workItem from="1714135184465" duration="34000" />
+      <workItem from="1716555760477" duration="3832000" />
+      <workItem from="1717071162199" duration="5335000" />
+      <workItem from="1718372113842" duration="3701000" />
+      <workItem from="1718630841144" duration="15000" />
+      <workItem from="1718890018494" duration="7340000" />
+      <workItem from="1719579910659" duration="4578000" />
+      <workItem from="1719903823142" duration="136000" />
+      <workItem from="1720181929202" duration="310000" />
+      <workItem from="1720183368510" duration="308000" />
+      <workItem from="1723204283877" duration="1558000" />
+      <workItem from="1723463841406" duration="88000" />
+      <workItem from="1723562953467" duration="1704000" />
+      <workItem from="1723734778348" duration="4528000" />
+      <workItem from="1726755057096" duration="1834000" />
+      <workItem from="1728050172496" duration="5282000" />
+      <workItem from="1728382511676" duration="24000" />
+      <workItem from="1728387099112" duration="105000" />
+      <workItem from="1729775036122" duration="3375000" />
+      <workItem from="1730377121219" duration="4766000" />
+      <workItem from="1730383761385" duration="602000" />
+      <workItem from="1731069684902" duration="1544000" />
+      <workItem from="1731071803689" duration="1236000" />
+      <workItem from="1731073283942" duration="11000" />
+      <workItem from="1731676336966" duration="723000" />
+      <workItem from="1731677923797" duration="25000" />
+      <workItem from="1731677971584" duration="609000" />
+      <workItem from="1732193886981" duration="6597000" />
+      <workItem from="1732265995876" duration="25000" />
+      <workItem from="1736425895369" duration="3864000" />
+      <workItem from="1737033548907" duration="7067000" />
+      <workItem from="1737629788971" duration="7257000" />
+    </task>
+    <task id="LOCAL-00001" summary="add project">
+      <option name="closed" value="true" />
+      <created>1713164923378</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1713164923378</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add project">
+      <option name="closed" value="true" />
+      <created>1737037528145</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737037528145</updated>
+    </task>
+    <task id="LOCAL-00003" summary="remove client service">
+      <option name="closed" value="true" />
+      <created>1737629941554</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737629941554</updated>
     </task>
     <servers />
   </component>

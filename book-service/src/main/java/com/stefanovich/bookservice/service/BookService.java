@@ -8,19 +8,19 @@ import jakarta.annotation.PostConstruct;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @RequiredArgsConstructor
 public class BookService {
     private final BookRepository bookRepository;
+    private final BookInsertLockService bookInsertLockService;
 
     @PostConstruct
+    @Transactional
     public void init() {
         //TODO optimistic and pessimistic lock
-        bookRepository.save(Book.builder()
-                .name("Test1").build());
-        bookRepository.save(Book.builder()
-                .name("Test2").build());
+        bookInsertLockService.insertBookWithLock();
     }
 
     @WithSpan("BookService getById")
