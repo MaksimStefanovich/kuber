@@ -36,7 +36,6 @@ public class BookInsertLockService {
         log.info("Unlocking");
     }
 
-    //TODO:
     private void extracted() {
         bookRepository.save(Book.builder()
                 .name("Test1").build());

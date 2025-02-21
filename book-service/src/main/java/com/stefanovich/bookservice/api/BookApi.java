@@ -1,6 +1,7 @@
 package com.stefanovich.bookservice.api;
 
 import com.stefanovich.bookservice.model.Book;
+import com.stefanovich.bookservice.service.BookInsertLockService;
 import com.stefanovich.bookservice.service.BookService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
@@ -16,10 +17,12 @@ import java.util.Map;
 @Slf4j
 public class BookApi {
     private final BookService bookService;
+    private final BookInsertLockService bookInsertLockService;
 
     @GetMapping("/{id}")
     public Book getById(@PathVariable Integer id, @RequestHeader Map<String, String> headers) {
         headers.forEach((name, value) -> log.debug("{} : {}", name, value));
+        bookInsertLockService.insertBookWithLock();
         return bookService.getById(id);
     }
 

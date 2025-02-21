@@ -17,9 +17,7 @@ public class BookService {
     private final BookInsertLockService bookInsertLockService;
 
     @PostConstruct
-    @Transactional
     public void init() {
-        //TODO optimistic and pessimistic lock
         bookInsertLockService.insertBookWithLock();
     }
 

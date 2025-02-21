@@ -20,6 +20,6 @@ public interface BookInsertLockRepo extends JpaRepository<BookInsertLock, Long> 
     boolean checkLock();
 
     @Query("select b from BookInsertLock b where b.id = 1")
-    @Lock(LockModeType.PESSIMISTIC_WRITE)
+    @Lock(LockModeType.PESSIMISTIC_READ)
     void findForUpdate();
 }
