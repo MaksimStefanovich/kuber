@@ -12,9 +12,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-public class BookInsertLock {
+public class BookInsertPessimisticLock {
     @Id
     private Long id;
 
     private boolean locked;
+
+    private boolean successed;
 }

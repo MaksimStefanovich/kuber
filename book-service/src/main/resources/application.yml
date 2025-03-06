@@ -1,5 +1,8 @@
 spring:
   application:
     name: book-service
+migration:
+  lock:
+    mode: optimistic
 
 
